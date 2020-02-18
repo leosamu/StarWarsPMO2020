@@ -1,0 +1,86 @@
+#target {
+    position: absolute;
+    top: -900px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#target>div {
+    padding-top: 1900px;
+    animation: autoscroll 1000s linear;
+}
+
+table {
+    width: 100%!important;
+}
+
+#headbody {
+    background: black;
+    color: yellow;
+    height: 50px;
+}
+
+#title:after {
+    background-color: aliceblue!important;
+}
+
+#target:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+#page {
+    background-image: url(https://wallpapercave.com/wp/wp2902991.jpg);
+    display: flex;
+    background-size: contain;
+    height: 3000;
+    top: 22px;
+}
+
+#pagecongradient {
+    background: linear-gradient(black, transparent);
+    display: flex;
+    height: 1900;
+    z-index: -10;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: 50% 100%;
+    transform: perspective(400px) rotateX(20deg);
+}
+
+#target {
+    color: yellow;
+    font-size: xx-large;
+}
+
+#target th {
+    color: yellow;
+    font-size: xx-large;
+}
+
+#target td {
+    color: yellow;
+    font-size: xx-large;
+}
+
+@keyframes autoscroll {
+    to {
+        margin-top: -50000px;
+    }
+}
